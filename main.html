@@ -8,7 +8,63 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <!--Name*
+	Email*
+	Gender* (radio buttons)
+	Car Brands* (options : [BMW, Audi, Mercedez])
+	Age*
+	DOB*
+	Phone Number
+	Password*
+	Checkbox*
+	submit button -->
+    <form action="backend.php" method="post">
+        <div><label for="name">Name</label>
+	        <input type="text" name="name" id="name" placeholder="Name" required>
+        </div><br>
+        <div><label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div><br>
+        <div><label for="gender">Gender &nbsp; </label>
+            <input type="radio" name="gender" id="gender_m"  required>Male
+           <input type="radio" name="gender" id="gender_f" required>Female
+          <input type="radio" name="gender" id=" # gender_o" required>Other
+        </div><br>
+        <div>
+            <label for="cars">Car Brands</label>
+            <select name="cars" id="cars" required>
+                <!--<option value="Select" selected>*select*</option>-->
+				<option value="" disabled selected hidden>--Please choose an option--</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Age"required>
+        </div><br>
+        <div>
+            <label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob" required>
+        </div><br>
+		</div><br>
+        <div>
+            <label for="tel">Phone Number</label>
+	            <input type="number" name="tel" id="tel" placeholder="xxx-xxx-xxxx" >
+        </div><br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div><br>
+        <div><label for="tos">I agree to the TOS</label>
+        <input type="checkbox" name="tos" id="tos" required>
+        </div><br>
+        <!--<input type="submit" value="Submit">-->
+		<button type="submit">Submit</button>
+    </div>
+</form>
+<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
